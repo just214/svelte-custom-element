@@ -1,0 +1,52 @@
+{
+  "name": "svelte-custom-element",
+  "version": "0.0.1",
+  "author": "Justin Wilkerson @gojutin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gojutin/svelte-custom-element.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gojutin/svelte-custom-element/issues"
+  },
+  "keywords": [
+    "svelte",
+    "web-component",
+    "custom-element",
+    "element",
+    "shadow-dom"
+  ],
+  "devDependencies": {
+    "dom-testing-library": "^4.1.0",
+    "jest": "^24.8.0",
+    "jest-dom": "^3.2.2",
+    "jest-transform-svelte": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.10.1",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.2.4",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.4.2",
+    "svelte": "^3.2.2",
+    "svelte-testing-library": "^1.5.5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.svelte$": "jest-transform-svelte"
+    },
+    "setupFilesAfterEnv": [
+      "svelte-testing-library/cleanup-after-each"
+    ]
+  }
+}
