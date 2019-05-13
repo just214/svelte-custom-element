@@ -37,7 +37,7 @@ You can then view your site in your browser by visiting [localhost:5000](http://
 
 ## About this template
 
-The Svelte compiler provides the option to compile to a custom element (web component). This allows you to use most of the niceties of Svelte to create production-ready custom elements. 
+The Svelte compiler provides the option to compile to a custom element (web component). This allows you to use most of the niceties of Svelte to create your custom elements, which can be a nice alternative to the general class-based approach. 
 
 This template is pre-configured with everything you need to start building a custom element out of the box, including [Jest](https://jestjs.io/) and [Svelte Testing Library](https://github.com/testing-library/svelte-testing-library) for testing your custom element.
 
@@ -47,7 +47,7 @@ This template is pre-configured with everything you need to start building a cus
 
 ### The basic idea:
 
-1. You create your custom element in the `App.svelte` file and use the `public/index.html` file to interact with your element. During development (`npm run dev`), live reloading will be enabled. This means that any changes made to your custom-element or the HTML will be immediately reflected in the browser. 
+1. You create your custom element in the `App.svelte` file and use the `public/index.html` file to interact with your element. During development (`npm run dev`), live reloading will be enabled. This means that any changes made to your custom-element or the HTML will be immediately reflected in the browser.
 
 2. Write tests for your custom element and ensure they are all passing.
 
